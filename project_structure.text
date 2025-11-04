@@ -1,0 +1,51 @@
+- .gitignore
+- dist
+  - assets
+    - index-B6buvr_4.js
+    - index-rDcrZNxT.css
+  - favicon.svg
+  - index.html
+- dist.zip
+- eslint.config.js
+- index.html
+- package-lock.json
+- package.json
+- postcss.config.js
+- public
+  - favicon1.html
+- src
+  - App.tsx
+  - components
+    - Footer.tsx
+    - Navbar.tsx
+  - index.css
+  - main.tsx
+  - pages
+    - AboutUs.tsx
+    - ApiDocumentation.tsx
+    - Blog.tsx
+    - Careers.tsx
+    - CaseStudies.tsx
+    - Compliance.tsx
+    - Contact.tsx
+    - Home.tsx
+    - IntegrationGuide.tsx
+    - Partners.tsx
+    - Press.tsx
+    - PrivacyPolicy.tsx
+    - Product.tsx
+    - Security.tsx
+    - SecurityFeatures.tsx
+    - SupportCenter.tsx
+    - TermsOfService.tsx
+    - WhitePapers.tsx
+  - vite-env.d.ts
+- tailwind.config.js
+- tsconfig.app.json
+- tsconfig.json
+- tsconfig.node.json
+- vite.config.ts
+
+
+
+ 
