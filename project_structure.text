@@ -11,13 +11,22 @@
 - package-lock.json
 - package.json
 - postcss.config.js
+- project_structure.text
 - public
   - favicon1.html
 - src
+  - .env
+  - 12.css
+  - api
+    - client.ts
   - App.tsx
   - components
+    - CursorParticles.tsx
     - Footer.tsx
+    - Handler.tsx
     - Navbar.tsx
+  - context
+    - AuthProvider.tsx
   - index.css
   - main.tsx
   - pages
@@ -28,17 +37,25 @@
     - CaseStudies.tsx
     - Compliance.tsx
     - Contact.tsx
+    - Demo.tsx
     - Home.tsx
     - IntegrationGuide.tsx
+    - Login.tsx
     - Partners.tsx
     - Press.tsx
     - PrivacyPolicy.tsx
     - Product.tsx
+    - Register.tsx
     - Security.tsx
     - SecurityFeatures.tsx
     - SupportCenter.tsx
     - TermsOfService.tsx
     - WhitePapers.tsx
+  - routes
+    - Protected.tsx
+    - WithCredits.tsx
+  - types
+    - animejs.d.ts
   - vite-env.d.ts
 - tailwind.config.js
 - tsconfig.app.json
@@ -48,4 +65,417 @@
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+bolt ai scenerio " i need clone a full website with react js + vite and for design tailwindcss and animejs .. and that must need to clone everything pixel perfectly e2e fully everything need to clone with the perfect scroll pn reveal and everything needed perfectly everything needed with the navigate also and hover effect auto scrolling like marquee everything i need first for the home clone this " https://touras.in/" home page have many interaction like scroll on behaviour smoothly hover smoothly transition smoothly and more text reveal    and the navbar and footers are common for every pages and the navbar have some nav links with the dropdown smoothly for every navlinks first navbar section  
+
+Products - the dropdown for products have three options "Neux , APIX and Payouts" the NeuX page neeed to clone this " https://touras.in/products/neux" and for the APIX clone this page " https://touras.in/products/apix" and for the payouts clone this page "https://touras.in/products/payouts"  perfectly and the next navbar section is 
+
+"Industries" -  in the industries dropdown first is Ecommerce for this page you need to clone this "https://touras.in/industries/e-commerce"  and the next dropdown option is Education for this you need to clone this page "https://touras.in/industries/education" and the next option is society for this you need to clone this page "https://touras.in/industries/society" and next option is retail for this you need to clone this page "https://touras.in/industries/retail"  and next option is Other Industries for this you need to clone this page "https://touras.in/industries/other-industries" and the industries is over next navbar section is  
+
+blog - this blog doesn't have dropdwons but for the blog you need clone this page "https://touras.in/blog" but in side the blog it have some blogs if you click the blogs it needs to goes a page to explain the blogs for example clone this page "https://touras.in/blog-details/driving-the-growth-of-the-digital-economy-through-digital-payments/6" like this you need to create some more blogs like this 
+
+and the next navbar section is 
+
+"Resources" - inside this a dropdown for pages first is Partner's Program for this page you need to clone this page "https://touras.in/partner-program" , next option is About-US for this page you need to clone this "https://touras.in/about-us" , next option is Contact-US for this page you need to clone this "https://touras.in/contact-us" , next option is Career for this page you need to clone this "https://touras.in/career" , next option is "Terms & Conditions " for this page you need to clone this "https://touras.in/terms-and-conditions" , next option is FAQ for this page you need to clone this "https://touras.in/faq" 
+
+
+
+
+
+
+
+
+
+//<-----------------------------------------------------------------------------------------
+
+
+
+ROLE
+You are a world-class Frontend Architect and production React engineer with deep experience producing pixel-perfect website clones, advanced animations, and developer-ready projects.
+
+GOAL
+Create a pixel-perfect, end-to-end frontend clone of Touras using:
+- React (Vite)
+- Tailwind CSS (utility-first)
+- animejs for timeline/scroll/sequence animations
+- react-router-dom for routing
+- Swiper.js (or equivalent) for carousels
+
+You will clone every page/path I list below **exactly** (visual layout, spacing, animations, interactions, and responsiveness). Use placeholder images (Unsplash) for assets unless I upload originals. Do NOT include copyrighted assets from the original site.
+
+IMPORTANT: I have attached three reference images (navbar, dropdown, footer). Use those images to match exact navbar/dropdown/footer visuals. If Bolt/Claude cannot see attachments yet, ask me to upload them.
+
+Images for reference : 
+
+1st attached image for - Navbar Reference 
+
+2nd attached image for - Navbar dropdown
+
+3rd attached image for - Footer
+
+REQUIREMENTS & DELIVERABLES (must produce all)
+1. A runnable Vite project that starts with:
+   npm install
+   npm run dev
+2. Full implementation of every page/route listed below, wired to react-router-dom.
+3. All pages use Tailwind and animejs for animations/scroll reveals.
+4. All dynamic content comes from JSON files under src/data/ (products.json, industries.json, blog.json, resources.json).
+5. Accessibility: keyboard-accessible dropdowns, ARIA attributes, alt text, reduced-motion respect.
+6. Performance: lazy-load images, debounce scroll handlers, avoid jank.
+7. Basic Jest + React Testing Library smoke tests for Home, one Product (Neux), and Blog routes.
+8. README.md with setup, run, build, deploy notes, and instructions to replace placeholder assets.
+9. scripts/zip.js (or shell script) to create /mnt/data/touras-clone.zip package of the full project.
+10. Provide the ZIP at /mnt/data/touras-clone.zip when finished.
+11. CHANGELOG.md summarizing implemented pages and any visual ambiguities.
+12. Provide clear list of placeholder asset filenames that must be replaced to match production visuals.
+
+TECH & STYLE
+- Use React + Vite + Tailwind + animejs
+- Use Swiper.js for carousels
+- Use Google Fonts to match site fonts (specify which fonts used)
+- Mobile-first responsive design; provide breakpoints and CSS tokens in tailwind.config.js
+- Use IntersectionObserver + animejs for in-view scroll reveals and staggered animations
+- Dropdowns open on hover (desktop) and on click/tap (mobile), and close on Esc
+
+PAGES & ROUTES TO CLONE (ALL of these must be included)
+HOME
+- /  → https://touras.in/  (full home page with hero, scroll behavior, marquee, text reveals, etc.)
+
+PRODUCTS (dropdown: Neux, APIX, Payouts)
+- /products/neux       → clone https://touras.in/products/neux
+- /products/apix       → clone https://touras.in/products/apix
+- /products/payouts    → clone https://touras.in/products/payouts
+
+INDUSTRIES (dropdown — ALL must be cloned)
+- /industries/e-commerce         → clone https://touras.in/industries/e-commerce
+- /industries/education          → clone https://touras.in/industries/education
+- /industries/society            → clone https://touras.in/industries/society
+- /industries/retail             → clone https://touras.in/industries/retail
+- /industries/other-industries   → clone https://touras.in/industries/other-industries
+
+BLOG & DETAILS
+- /blog                          → clone https://touras.in/blog (listing)
+- /blog/:slug/:id                → clone blog detail layout (example: /blog/driving-the-growth-of-the-digital-economy-through-digital-payments/6)
+  - Provide at least 4 sample blog posts (JSON + detail pages)
+
+RESOURCES (dropdown — ALL must be cloned)
+- /partner-program               → clone https://touras.in/partner-program
+- /about-us                      → clone https://touras.in/about-us
+- /contact-us                    → clone https://touras.in/contact-us
+- /career                        → clone https://touras.in/career
+- /terms-and-conditions          → clone https://touras.in/terms-and-conditions
+- /faq                           → clone https://touras.in/faq
+- /privacy-policy                → clone https://touras.in/privacy-policy
+
+NAVBAR & FOOTER
+- Navbar must include top-level links: **Products, Industries, Blog, Resources** (exact text and order).
+- Use attached navbar/dropdown/footer images to match style, spacing and hover/dropdown behaviour.
+- Navbar and footer are shared across all pages and must match reference visuals closely.
+
+INTERACTIONS & ANIMATIONS (must be replicated)
+- Hero text reveal animations (staggered) using animejs timelines.
+- Section in-view reveals with stagger (title → subtitle → content).
+- Auto-marquee / auto-scroll areas (pause on hover).
+- Smooth hover transitions on buttons, cards, links (scale + shadow + color fade).
+- Carousels: autoplay, pause on hover, nav indicators.
+- Sticky navbar with smooth show/hide and background transition.
+- Dropdowns: fade + slide + subtle scale.
+- Smooth anchor scrolling and scroll-to-top button.
+- Respect prefers-reduced-motion.
+
+DESIGN & THEME
+- Tailwind theme tokens (colors, fonts, spacing) declared in tailwind.config.js – match site’s visual tone (provide hex guesses if necessary).
+- Provide CSS utilities for repeated micro-interactions (shadow, transition, focus).
+- Mobile-first layout with breakpoints for tablet and desktop.
+
+DATA
+- src/data/products.json
+- src/data/industries.json
+- src/data/blog.json
+- src/data/resources.json
+All pages read content from these JSON files.
+
+PROJECT FILES & STRUCTURE (required)
+- package.json
+- vite.config.js
+- tailwind.config.js
+- postcss.config.js
+- public/
+- src/
+  - main.jsx
+  - index.css
+  - assets/
+  - components/ (Header, Footer, Hero, Marquee, Carousel, ProductCard, BlogCard, Tabs, Dropdown, etc.)
+  - pages/ (Home.jsx, products/Neux.jsx, products/Apix.jsx, products/Payouts.jsx, industries/*, blog/Blog.jsx, blog/BlogDetail.jsx, resources/*)
+  - data/
+  - hooks/ (useInView, useMarquee, usePrefersReducedMotion)
+  - utils/
+  - tests/ (jest + react testing library)
+
+TESTS
+- Jest + React Testing Library smoke tests for:
+  - Home route renders hero
+  - /products/neux renders main product hero/section
+  - /blog renders list and at least one blog detail route
+
+OUTPUT SEQUENCE (what I expect from the Claude agent)
+1) Initial analysis: component inventory for HOME, estimated color hex values, font guesses, animation plan, and list of ambiguous visuals that need my confirmation (short).
+2) Provide package.json, vite.config.js, tailwind.config.js, postcss.config.js.
+3) Provide project files file-by-file in code blocks, starting with src/main.jsx and index.css, then components, pages, data JSON, tests.
+4) Provide README.md with run/build/deploy instructions and list of placeholder assets and filenames.
+5) Provide scripts/zip.js or shell script and create /mnt/data/touras-clone.zip and return a download link.
+6) Final QA checklist and short notes on how to replace placeholders to match production images.
+
+AMBIGUITIES & ASKS
+- If any exact pixel detail or image asset is ambiguous, choose the closest match and list it in the initial analysis.
+- If you need the three reference images (navbar, dropdown, footer) and they are not visible, request that I upload them now.
+
+Important rules
+- Do not use copyrighted images from the original site.
+- All code must be runnable — no pseudo-code.
+- Keep the output modular and well-documented.
+
+Start now. First output the **Initial analysis** (component inventory for HOME page, color hex guesses, font guesses, animation plan, and any ambiguous items asking for confirmation). Then provide package.json and config files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//<--------------------------------------------------------------------
+
+
+
+# ROLE
+You are a world-class Frontend Architect and production React engineer with deep experience in creating pixel-perfect website clones, advanced animations, and production-ready applications.
+
+# GOAL
+Create a complete, pixel-perfect frontend clone of the Touras website (https://touras.in/) using modern React technologies. The clone must replicate every visual detail, animation, interaction, and responsive behavior of the original site.
+
+# TECHNICAL STACK REQUIREMENTS
+- React.js 18 with Vite build tool
+- Tailwind CSS for utility-first styling
+- Anime.js for timeline/scroll/sequence animations
+- React Router DOM for client-side routing
+- Swiper.js for carousel components
+- Google Fonts matching the original site typography
+
+# VISUAL REFERENCE MATERIALS
+**CRITICAL**: Three reference images are required for accurate implementation:
+1. **Navbar Reference** - Complete navigation bar styling and layout
+2. **Navbar Dropdown** - Dropdown menu interactions and styling  
+3. **Footer Reference** - Footer layout and component styling
+
+**STOP**: If you cannot see these attached images, immediately request that I upload them before proceeding, as they are essential for accurate visual matching.
+
+# COMPLETE PAGE IMPLEMENTATION REQUIREMENTS
+
+## Core Pages (All Required)
+**HOME PAGE**
+- `/` → Full homepage with hero sections, scroll animations, marquee effects, text reveals
+
+**PRODUCT PAGES** (Dropdown Navigation)
+- `/products/neux` → Neux product page
+- `/products/apix` → APIX product page  
+- `/products/payouts` → Payouts product page
+
+**INDUSTRY PAGES** (Dropdown Navigation - All Required)
+- `/industries/e-commerce`
+- `/industries/education`
+- `/industries/society`
+- `/industries/retail`
+- `/industries/other-industries`
+
+**BLOG SYSTEM**
+- `/blog` → Blog listing page
+- `/blog/:slug/:id` → Dynamic blog detail pages
+- Minimum 4 sample blog posts with full content
+
+**RESOURCE PAGES** (Dropdown Navigation - All Required)
+- `/partner-program`
+- `/about-us`
+- `/contact-us`
+- `/career`
+- `/terms-and-conditions`
+- `/faq`
+- `/privacy-policy`
+
+# ANIMATION & INTERACTION SPECIFICATIONS
+
+## Required Animations (Must Replicate Exactly)
+- **Hero text reveals**: Staggered character/word animations using anime.js timelines
+- **Scroll-triggered reveals**: Section content appears with staggered timing (title → subtitle → content)
+- **Auto-marquee effects**: Continuous scrolling with pause-on-hover functionality
+- **Hover transitions**: Smooth scale, shadow, and color transitions on interactive elements
+- **Carousel behaviors**: Autoplay with pause-on-hover, navigation indicators
+- **Sticky navigation**: Show/hide behavior with background transitions
+- **Dropdown animations**: Fade + slide + subtle scale effects
+- **Smooth scrolling**: Anchor navigation and scroll-to-top functionality
+- **Accessibility**: Respect `prefers-reduced-motion` user preference
+
+## Interaction Requirements
+- **Desktop**: Dropdowns open on hover
+- **Mobile**: Dropdowns open on click/tap
+- **Keyboard**: All dropdowns accessible via keyboard navigation
+- **Close behavior**: Dropdowns close on Esc key press
+
+# TECHNICAL IMPLEMENTATION REQUIREMENTS
+
+## Project Structure
+```
+src/
+├── main.jsx
+├── index.css
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Hero.jsx
+│   ├── Marquee.jsx
+│   ├── Carousel.jsx
+│   ├── ProductCard.jsx
+│   ├── BlogCard.jsx
+│   ├── Dropdown.jsx
+│   └── [additional components]
+├── pages/
+│   ├── Home.jsx
+│   ├── products/
+│   ├── industries/
+│   ├── blog/
+│   └── resources/
+├── data/
+│   ├── products.json
+│   ├── industries.json
+│   ├── blog.json
+│   └── resources.json
+├── hooks/
+│   ├── useInView.js
+│   ├── useMarquee.js
+│   └── usePrefersReducedMotion.js
+├── utils/
+└── tests/
+```
+
+## Data Management
+- All dynamic content sourced from JSON files in `src/data/`
+- No hardcoded content in components
+- Structured data for products, industries, blog posts, and resources
+
+## Performance & Accessibility
+- **Image optimization**: Lazy loading with Intersection Observer
+- **Scroll performance**: Debounced scroll handlers to prevent jank
+- **Accessibility**: ARIA attributes, keyboard navigation, alt text for images
+- **Responsive design**: Mobile-first approach with defined breakpoints
+
+## Testing Requirements
+- Jest + React Testing Library setup
+- Smoke tests for:
+  - Home page hero rendering
+  - Product page (Neux) main sections
+  - Blog listing and detail pages
+
+# DELIVERABLES CHECKLIST
+
+## 1. Runnable Project
+- Complete Vite project that starts with `npm install && npm run dev`
+- All dependencies properly configured in `package.json`
+
+## 2. Configuration Files
+- `vite.config.js` with proper build settings
+- `tailwind.config.js` with custom theme tokens matching site colors/fonts
+- `postcss.config.js` for Tailwind processing
+
+## 3. Documentation
+- **README.md**: Setup, run, build, and deployment instructions
+- **CHANGELOG.md**: Summary of implemented pages and visual decisions
+- Clear list of placeholder asset filenames for production replacement
+
+## 4. Asset Management
+- Use Unsplash placeholder images (no copyrighted content from original site)
+- Provide specific filenames for assets that need replacement
+- Instructions for swapping placeholders with production assets
+
+## 5. Build & Deployment
+- `scripts/zip.js` to create project package
+- Final deliverable: `/mnt/data/touras-clone.zip`
+
+# DESIGN SPECIFICATIONS
+
+## Visual Matching Requirements
+- **Colors**: Extract and match exact hex values from original site
+- **Typography**: Identify and implement matching Google Fonts
+- **Spacing**: Replicate exact padding, margins, and layout spacing
+- **Responsive breakpoints**: Mobile, tablet, desktop layouts
+- **Component styling**: Buttons, cards, forms, and interactive elements
+
+## Theme Configuration
+- Custom Tailwind theme tokens in `tailwind.config.js`
+- CSS utility classes for repeated micro-interactions
+- Consistent design system implementation
+
+# EXECUTION SEQUENCE
+
+## Phase 1: Analysis & Planning
+Provide initial analysis including:
+- Component inventory for homepage
+- Color palette extraction (hex values)
+- Font identification and Google Fonts mapping
+- Animation implementation strategy
+- List of any visual ambiguities requiring clarification
+
+## Phase 2: Configuration Setup
+- `package.json` with all dependencies
+- Vite, Tailwind, and PostCSS configuration files
+
+## Phase 3: Implementation
+- Core components and layout structure
+- Page implementations (file-by-file in code blocks)
+- Data JSON files with sample content
+- Custom hooks and utilities
+
+## Phase 4: Testing & Documentation
+- Jest test suite implementation
+- Comprehensive README and CHANGELOG
+- Asset replacement instructions
+
+## Phase 5: Final Delivery
+- Project packaging script
+- ZIP file creation at specified path
+- Final QA checklist and deployment notes
+
+# CRITICAL CONSTRAINTS
+- **No copyrighted assets**: Use only placeholder images from Unsplash
+- **Production-ready code**: No pseudo-code or incomplete implementations
+- **Exact visual matching**: Pixel-perfect replication of original design
+- **Full functionality**: All interactions and animations must work as specified
+
+# BEGIN IMPLEMENTATION
+Start with the initial analysis phase, then proceed through each phase systematically. **If reference images are not visible, request upload immediately before continuing.**

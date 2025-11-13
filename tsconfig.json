@@ -3,5 +3,32 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ES2020",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
 }
+
+
+// {
+//   "files": [],
+//   "references": [
+//     { "path": "./tsconfig.app.json" },
+//     { "path": "./tsconfig.node.json" }
+//   ],
+//   "compilerOptions": {
+//     "module": "ESNext",
+//     "target": "ES2020",
+//     "moduleResolution": "Bundler",
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "animejs": ["node_modules/animejs/dist/anime.es.js"]
+//     }
+//   }
+// }
